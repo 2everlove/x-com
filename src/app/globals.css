@@ -39,7 +39,7 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -78,6 +78,7 @@
   padding: 0;
   margin: 0;
 }
+*/
 
 html,
 body {
@@ -86,7 +87,7 @@ body {
 }
 
 body {
-  color: black;
+  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
@@ -99,9 +100,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+*/

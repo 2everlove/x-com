@@ -4,12 +4,7 @@ import styles from '@/app/(beforeLogin)/_components/main.module.css'
 import Link from 'next/link'
 import xLogo from '@/../../public/xLogo.png'
 
-import { useRouter } from "next/navigation"
-
-
-export default function Login() {
-    const router = useRouter();
-    router.replace('/i/flow/login');
+export default function Main() {
     return (
         <>
             <div className={styles.left}>
