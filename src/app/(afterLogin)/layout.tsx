@@ -3,6 +3,7 @@ import style from "@/app/(afterLogin)/layout.module.css";
 import Link from "next/link";
 import xLogo from '@/../../public/xLogo.png'
 import Image from "next/image";
+import NavMenu from "./_components/NaveMenu";
 
 export default function AfrterLoginLayout({children}: {children: ReactNode }) {
     return (
@@ -15,6 +16,11 @@ export default function AfrterLoginLayout({children}: {children: ReactNode }) {
                                 <Image src={xLogo} alt="logo" width={45} height={30}/>
                             </div>
                         </Link>
+                        <nav>
+                            <ul>
+                                <NavMenu/>
+                            </ul>
+                        </nav>
                     </div>
                 </section>
             </header>
@@ -34,6 +40,6 @@ export default function AfrterLoginLayout({children}: {children: ReactNode }) {
                     </section>
                 </div>
             </div>
-        </div>
+        </div> 
     )
 }
