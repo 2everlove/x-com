@@ -4,6 +4,9 @@ import Link from "next/link";
 import xLogo from '@/../../public/xLogo.png'
 import Image from "next/image";
 import NavMenu from "./_components/NaveMenu";
+import LogOutButton from "./_components/LogOutButton";
+import TrendSection from "./_components/TrendSection";
+import FollowRecommend from "./_components/FollowRecommend";
 
 export default function AfrterLoginLayout({children}: {children: ReactNode }) {
     return (
@@ -20,7 +23,9 @@ export default function AfrterLoginLayout({children}: {children: ReactNode }) {
                             <ul>
                                 <NavMenu/>
                             </ul>
+                            <Link href="/compose/tweet" className={style.postButton}>Post</Link>
                         </nav>
+                        <LogOutButton/>
                     </div>
                 </section>
             </header>
@@ -37,6 +42,8 @@ export default function AfrterLoginLayout({children}: {children: ReactNode }) {
                             </svg>
                             <input type="search" />
                         </form>
+                        <TrendSection/>
+                        <FollowRecommend/>
                     </section>
                 </div>
             </div>
