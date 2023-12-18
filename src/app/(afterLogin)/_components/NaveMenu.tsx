@@ -98,7 +98,7 @@ export default function NavMenu(){
         {me?.id && <li>
           <Link href={`/${me?.id}`}>
             <div className={style.navPill}>
-              {segment === me.id ? <>
+              {segment === me.id || (segment !== 'home' && segment !== 'explore' && segment !== 'messages') ? <>
                   <svg width={26} viewBox="0 0 24 24" aria-hidden="true"
                        className="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e">
                     <g>
